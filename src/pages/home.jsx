@@ -1,5 +1,5 @@
 import React from 'react'
-import Li_menu from '../component/li_menu'
+import Li_menu from '../component/Li_Menu'
 import Navbar from '../component/navbar'
 import Slider1 from '../component/Slider1'
 import Slider2 from '../component/Slider2'

@@ -501,9 +501,9 @@ function Navbar() {
                 </div>
                 <div className='w-full h-[86vh] p-5'>
                     <ul className='w-full'>
-                        <li className='cursor-pointer w-full h-[50px] rounded mb-5 flex items-center ps-5 hover:bg-[#EAEAEA] text-sm' onClick={() => { navigate(`/product?category=Mens Clothes`), window.location.reload() }}>MEN</li>
-                        <li className='cursor-pointer w-full h-[50px] rounded mb-5 flex items-center ps-5 hover:bg-[#EAEAEA] text-sm' onClick={() => { navigate(`/product?category=Womens Clothes`), window.location.reload() }}>WOMEN</li>
-                        <li className='cursor-pointer w-full h-[50px] rounded mb-5 flex items-center ps-5 hover:bg-[#EAEAEA] text-sm' onClick={() => { navigate(`/product?category=Mobile Cover`), window.location.reload() }}>MOBILE COVERS</li>
+                        <li className='cursor-pointer w-full h-[50px] rounded mb-5 flex items-center ps-5 hover:bg-[#EAEAEA] text-sm' onClick={() => { navigate(`/product?category=Mens Clothes`) }}>MEN</li>
+                        <li className='cursor-pointer w-full h-[50px] rounded mb-5 flex items-center ps-5 hover:bg-[#EAEAEA] text-sm' onClick={() => { navigate(`/product?category=Womens Clothes`) }}>WOMEN</li>
+                        <li className='cursor-pointer w-full h-[50px] rounded mb-5 flex items-center ps-5 hover:bg-[#EAEAEA] text-sm' onClick={() => { navigate(`/product?category=Mobile Cover`) }}>MOBILE COVERS</li>
                     </ul>
                     <div className='w-full h-[40px] mb-10 mt-10 flex justify-between items-center'>
                         <button className='border border-black w-[30%] h-full rounded-lg bg-black text-white font-bold hover:bg-white hover:text-black hover:border-black cursor-pointer text-xs' onClick={() => navigate('/login')}>Login</button>

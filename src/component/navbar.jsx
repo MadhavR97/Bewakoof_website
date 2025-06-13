@@ -467,7 +467,7 @@ function Navbar() {
                     <div className='w-full h-[450px] mt-5 flex flex-col gap-2 overflow-auto'>
                         {search.length > 0 && data.map((e) => {
                             return (
-                                <div className='border border-gray-200 w-full flex justify-start items-center rounded p-3 cursor-pointer' key={e._id} onClick={() => { navigate(`/product/${e.id}`), window.location.reload() }}>
+                                <div className='border border-gray-200 w-full flex justify-start items-center rounded p-3 cursor-pointer' key={e._id} onClick={() => { navigate(`/product/${e.id}`) }}>
                                     <img src={e.mainImage} alt="" className='w-[50px]' />
                                     <p className='h-full flex items-center px-2 text-xs font-bold'>{e.title}</p>
                                 </div>

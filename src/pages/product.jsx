@@ -259,7 +259,7 @@ function Product() {
       </div>
 
       {/* Product Section */}
-      <div className='w-full h-[83vh] fixed top-27 md:h-[86vh] md:top-25 md:flex'>
+      <div className='w-full h-[83vh] fixed top-[108px] md:h-[86vh] md:top-[100px] md:flex'>
         {/* Mobile render */}
         <div className='px-2 flex justify-between items-center md:hidden'>
           <div className='flex justify-between items-center'>

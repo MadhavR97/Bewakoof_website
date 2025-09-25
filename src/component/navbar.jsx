@@ -117,7 +117,7 @@ function Navbar() {
     return (
         <>
             {/* Header */}
-            <div className='border-b-1 border-[gray] bg-white w-full h-[100px] fixed top-0 left-0 z-2 md:flex'>
+            <div className='border-b border-[gray] bg-white w-full h-[100px] fixed top-0 left-0 z-[2] md:flex'>
                 {/* Logo */}
                 <div className='w-full md:w-[20%] h-full flex justify-center items-center relative'>
                     <img src="https://images.bewakoof.com/web/ic-desktop-bwkf-trademark-logo.svg" alt="" className='w-[150px] cursor-pointer' onClick={() => navigate('/')} />
@@ -149,7 +149,7 @@ function Navbar() {
                         </div>
                     </div>
                     {search.length > 0 &&
-                        <div className='w-[768px] max-h-[86vh] absolute top-[100px] bg-white grid grid-cols-4 p-3 gap-3 overflow-auto rounded-lg' style={{ backgroundColor: '#EAEAEA' }}>
+                        <div className='w-[768px] max-h-[86vh] absolute top-[100px] left-1/2 -translate-x-1/2 bg-white grid grid-cols-4 p-3 gap-3 overflow-auto rounded-lg' style={{ backgroundColor: '#EAEAEA' }}>
                             {data.map((item) => {
                                 return <div className='border border-[gray] bg-white p-3 rounded cursor-pointer' key={item.id} onClick={() => { navigate(`/product/${item.id}`), window.location.reload() }}>
                                     <div>
@@ -192,7 +192,7 @@ function Navbar() {
 
             {/* LI dropdown Menu for men, women and mobile cover */}
             {/* Men LI Menu */}
-            <div className='hidden md:hidden w-full h-[500px] bg-white z-2 absolute top-25 md:flex' ref={men} onMouseLeave={menleave}>
+            <div className='hidden md:hidden w-full h-[500px] bg-white z-[2] absolute top-[100px] md:flex' ref={men} onMouseLeave={menleave}>
                 <div className='w-[17%] h-full p-5'>
                     <p className='font-bold mb-5'>Topwear</p>
                     <ul className='w-full h-[400px] flex flex-col justify-evenly text-sm text-[gray]'>
@@ -276,7 +276,7 @@ function Navbar() {
             </div>
 
             {/* Women LI Menu */}
-            <div className='hidden md:hidden w-full h-[500px] bg-white z-2 absolute top-25 md:flex' ref={women} onMouseLeave={womenleave}>
+            <div className='hidden md:hidden w-full h-[500px] bg-white z-[2] absolute top-[100px] md:flex' ref={women} onMouseLeave={womenleave}>
                 <div className='w-[17%] h-full p-5'>
                     <p className='font-bold mb-5'>Topwear</p>
                     <ul className='w-full h-[400px] flex flex-col justify-evenly text-sm text-[gray]'>
@@ -360,7 +360,7 @@ function Navbar() {
             </div>
 
             {/* Mobile-Cover LI Menu */}
-            <div className='hidden md:hidden w-full h-[500px] bg-white z-2 absolute top-25 md:flex' ref={mobilecover} onMouseLeave={mobilecoverleave}>
+            <div className='hidden md:hidden w-full h-[500px] bg-white z-[2] absolute top-[100px] md:flex' ref={mobilecover} onMouseLeave={mobilecoverleave}>
                 <div className='w-[20%] h-full p-5'>
                     <p className='font-bold mb-5'>Apple</p>
                     <ul className='w-full h-[400px] flex flex-col justify-evenly text-sm text-[gray]'>
@@ -451,7 +451,7 @@ function Navbar() {
             </div>
 
             {/* Responsive Search div */}
-            <div className='md:hidden w-full h-screen fixed top-0 bg-white ease-in-out duration-500 translate-x-[-100%] z-2' ref={searchBar}>
+            <div className='md:hidden w-full h-screen fixed top-0 bg-white ease-in-out duration-500 translate-x-[-100%] z-[2]' ref={searchBar}>
                 <div className='w-full h-[50px] flex justify-end items-center'>
                     <i className='bx bx-x text-2xl w-[50px] h-full justify-center items-center cursor-pointer' style={{ display: 'flex' }} onClick={closeSearchBar}></i>
                 </div>
@@ -478,7 +478,7 @@ function Navbar() {
             </div>
 
             {/* Responsive Menu Bar */}
-            <div className='md:hidden w-full h-screen fixed top-0 bg-white ease-in-out duration-500 translate-x-[-100%] z-2' ref={menuBar}>
+            <div className='md:hidden w-full h-screen fixed top-0 bg-white ease-in-out duration-500 translate-x-[-100%] z-[2]' ref={menuBar}>
                 <div className='w-full h-[50px] flex justify-end items-center'>
                     <i className='bx bx-x text-2xl w-[50px] h-full justify-center items-center cursor-pointer' style={{ display: 'flex' }} onClick={closeMenuBar}></i>
                 </div>

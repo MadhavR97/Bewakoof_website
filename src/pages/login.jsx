@@ -1,4 +1,4 @@
-import React, { use, useState } from 'react'
+import React, { useState } from 'react'
 import Navbar from '../component/navbar'
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast, Bounce, Slide, Flip, Zoom } from 'react-toastify';
@@ -85,7 +85,7 @@ function Login() {
                     <label htmlFor="" className='font-bold mb-2 text-sm md:text-base'>Email</label>
                     <input type="text" placeholder='Enter your email' className='border border-[gray] w-full h-[40px] ps-5 mb-5 rounded md:h-[50px] text-sm md:text-base' name='email' value={user.email} onChange={handleChange} />
                     <label htmlFor="" className='font-bold mb-2 text-sm md:text-base'>Password</label>
-                    <input type="text" placeholder='Enter your password' className='border border-[gray] w-full h-[40px] ps-5 mb-5 rounded md:h-[50px] text-sm md:text-base' name='password' value={user.password} onChange={handleChange} />
+                    <input type="password" placeholder='Enter your password' className='border border-[gray] w-full h-[40px] ps-5 mb-5 rounded md:h-[50px] text-sm md:text-base' name='password' value={user.password} onChange={handleChange} />
                     <button className='border-none w-full h-[40px] bg-black text-white hover:bg-gray-800 rounded md:h-[50px] cursor-pointer' onClick={handleSubmit}>Login</button>
                     <div className='w-full flex items-center mt-5'>
                         <hr className='flex-grow border-[gray]' />

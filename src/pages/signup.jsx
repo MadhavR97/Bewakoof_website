@@ -1,4 +1,4 @@
-import React, { use, useState } from 'react'
+import React, { useState } from 'react'
 import Navbar from '../component/navbar'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -102,7 +102,7 @@ function Signup() {
                     {user.email && isValidEmail && <p className='text-[green] text-xs mb-5'>Valid email</p>}
                     {/* Password */}
                     <label htmlFor="" className='font-bold mb-2 text-sm md:text-base'>Password</label>
-                    <input type="text" placeholder='Enter your password' className='border border-[gray] w-full h-[40px] ps-5 mb-1 rounded md:h-[50px] text-sm md:text-base' name='password' value={user.password} onChange={handleChange} />
+                    <input type="password" placeholder='Enter your password' className='border border-[gray] w-full h-[40px] ps-5 mb-1 rounded md:h-[50px] text-sm md:text-base' name='password' value={user.password} onChange={handleChange} />
                     {user.password && !isValidPassword && <p className='text-[brown] text-xs mb-5'>Password must be at least 8 characters long and contain at least one letter and one number.</p>}
                     {user.password && isValidPassword && <p className='text-[green] text-xs mb-5'>Valid password</p>}
                     <button className='border-none w-full h-[40px] bg-black text-white hover:bg-gray-800 rounded mt-5 md:h-[50px] cursor-pointer' onClick={handleSubmit}>Signup</button>
